@@ -111,7 +111,38 @@ pip install factorio-draftsman
 
 This will install the latest version of Draftsman with a set of pre-generated data from the latest version of vanilla Factorio.
 
+If you are working from a clone of the repository you can install Draftsman in
+editable mode and pull in the test dependencies with:
+
+```
+pip install -e . -r requirements.txt
+```
+
+This ensures the ``draftsman`` package is importable when running the test suite.
+
 If you want to have the same data validation that Draftsman provides for vanilla data with mods as well, you can re-generate this data with the command line tool `draftsman-update`, which is described in detail [here](TODO).
+
+### Simplex quick start
+The ``draftsman.simplex`` module provides a few helper functions for new users.
+They wrap the regular API with some sensible defaults so you can get started
+faster:
+
+```python
+from draftsman.simplex import Blueprint, load_blueprint, save_blueprint, setup
+
+# Optional: ensure data is up to date
+setup()
+
+# Create or load a blueprint
+bp = Blueprint()
+bp.label = "Hello, simplex!"
+
+# Save the blueprint string to disk
+save_blueprint(bp, "example.txt")
+```
+
+All objects returned by ``draftsman.simplex`` are fully compatible with the
+standard Draftsman API.
 
 ### Testing with [unittest](https://docs.python.org/3/library/unittest.html):
 ```

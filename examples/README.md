@@ -106,3 +106,27 @@ Also outputs an additional blueprint string if it detects the Factorio-Extended 
 ![train_schdule_usage.png](images/train_schedule_usage.png)
 
 Showcases how to construct train `Schedule` objects, how to properly use the `WaitCondition` and `WaitConditions` classes to create stops in those schedules, and how to assign that newly created schedule to new or existing trains within a blueprint.
+## Simplex examples
+
+These scripts demonstrate using the new :mod:`draftsman.simplex` helpers.
+
+- [`simple_create.py`](simplex/simple_create.py)
+- [`simple_load_save.py`](simplex/simple_load_save.py)
+- [`simple_setup.py`](simplex/simple_setup.py)
+- [`simple_book.py`](simplex/simple_book.py)
+- [`simple_load_string.py`](simplex/simple_load_string.py)
+- [`mix_entities.py`](simplex/mix_entities.py)
+- [`mix_schedule.py`](simplex/mix_schedule.py)
+- [`mix_constant_signals.py`](simplex/mix_constant_signals.py)
+- [`mix_blueprint_merge.py`](simplex/mix_blueprint_merge.py)
+- [`mix_save_image.py`](simplex/mix_save_image.py)
+- [`simple_factory_line.py`](simplex/simple_factory_line.py)
+- [`simple_circuit_latch.py`](simplex/simple_circuit_latch.py)
+- [`simple_bus_balancer.py`](simplex/simple_bus_balancer.py)
+- [`simple_power_grid.py`](simplex/simple_power_grid.py)
+- [`simple_mall.py`](simplex/simple_mall.py)
+- [`mix_auto_smelt.py`](simplex/mix_auto_smelt.py)
+- [`mix_beacon_factory.py`](simplex/mix_beacon_factory.py)
+- [`mix_logic_counter.py`](simplex/mix_logic_counter.py)
+- [`mix_train_loader.py`](simplex/mix_train_loader.py)
+- [`mix_full_process.py`](simplex/mix_full_process.py)
