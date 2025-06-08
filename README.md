@@ -122,6 +122,33 @@ This ensures the ``draftsman`` package is importable when running the test suite
 
 If you want to have the same data validation that Draftsman provides for vanilla data with mods as well, you can re-generate this data with the command line tool `draftsman-update`, which is described in detail [here](TODO).
 
+### Step-by-step setup
+Follow these steps if you are starting from a fresh clone of the repository:
+
+1. **Clone** the project from GitHub:
+   ```bash
+   git clone https://github.com/redruin1/factorio-draftsman.git
+   cd factorio-draftsman
+   ```
+2. *(Optional)* **Create a virtual environment** so the dependencies remain isolated:
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate
+   ```
+3. **Install Draftsman** and its test requirements:
+   ```bash
+   pip install -e . -r requirements.txt
+   ```
+4. **Run the test suite** to make sure everything is set up correctly:
+   ```bash
+   pytest -q
+   ```
+5. **Try an example** to verify functionality. For instance:
+   ```bash
+   python examples/simplex/simple_create.py
+   ```
+
+
 ### Simplex quick start
 The ``draftsman.simplex`` module provides a few helper functions for new users.
 They wrap the regular API with some sensible defaults so you can get started
