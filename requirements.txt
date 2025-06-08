@@ -1,7 +1,7 @@
 # Requirements
 pydantic >= 2.3.0
 lupa >= 2.0
-gitpython >= 3.4.0
+gitpython >= 3.1.44
 # Compatibility
 typing; python_version < '3.8'
 importlib-resources; python_version < '3.7'
@@ -13,4 +13,4 @@ coverage
 tox
 black
 build
-guppy
+guppy3

@@ -106,3 +106,17 @@ Also outputs an additional blueprint string if it detects the Factorio-Extended 
 ![train_schdule_usage.png](images/train_schedule_usage.png)
 
 Showcases how to construct train `Schedule` objects, how to properly use the `WaitCondition` and `WaitConditions` classes to create stops in those schedules, and how to assign that newly created schedule to new or existing trains within a blueprint.
+## Simplex examples
+
+These scripts demonstrate using the new :mod:`draftsman.simplex` helpers.
+
+- [`simple_create.py`](simplex/simple_create.py)
+- [`simple_load_save.py`](simplex/simple_load_save.py)
+- [`simple_setup.py`](simplex/simple_setup.py)
+- [`simple_book.py`](simplex/simple_book.py)
+- [`simple_load_string.py`](simplex/simple_load_string.py)
+- [`mix_entities.py`](simplex/mix_entities.py)
+- [`mix_schedule.py`](simplex/mix_schedule.py)
+- [`mix_constant_signals.py`](simplex/mix_constant_signals.py)
+- [`mix_blueprint_merge.py`](simplex/mix_blueprint_merge.py)
+- [`mix_save_image.py`](simplex/mix_save_image.py)
